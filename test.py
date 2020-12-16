@@ -25,4 +25,8 @@ class TestProgression(unittest.TestCase):
         self.assertRaises(TypeError,self.test.__mul__,0.5)
 
 if __name__ == '__main__':
+    import xmlrunner
+    runner = xmlrunner.XMLTestRunner(output='test-reports')
+    unittest.main(testRunner=runner)
+    
     unittest.main()
